@@ -3,8 +3,7 @@
 #include <stdlib.h>
 extern char* tzname[];
 
-int main()
-{
+int main() {
     time_t now;
     struct tm* sp;
     (void)time(&now);
