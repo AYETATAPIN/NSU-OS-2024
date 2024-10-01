@@ -7,6 +7,7 @@ int main() {
     time_t now;
     struct tm* sp;
     (void)time(&now);
+    putenv("TZ=");
     printf("%lld\n", now);
     printf("%s", ctime(&now));
     (void)time(&now);
