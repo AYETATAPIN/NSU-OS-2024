@@ -7,7 +7,10 @@ int main() {
     time_t now;
     struct tm* sp;
     (void)time(&now);
-    setenv("TZ","PST8",1);
+    printf("%lld\n", now);
+    printf("%s", ctime(&now));
+    (void)time(&now);
+    setenv("TZ","UTC",1);
     printf("%lld\n", now);
     printf("%s", ctime(&now));
     printf("%lld\n", now);
